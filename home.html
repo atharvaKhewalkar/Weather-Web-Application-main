@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Weather App</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Kalam&family=KoHo:wght@200&family=Mina&family=Quantico&display=swap" rel="stylesheet">
 </head>
 <body>
     <section>
@@ -21,8 +24,66 @@
                     <h3 class="temp">26.49*C</h3>
                     <p class="tempmin_max">Min 26.49*C| Maz 26.49*C</p>
                 </div>
+                
             </div>
         </div>
     </section>
+    <script>
+       const curDate = document.getElementById("date");
+       let weathercon = document.getElementById("weathericon");
+
+       const tempStatus = 'Clouds';
+
+       const getcurrentDay =()=>{
+            var weekday = new Array(7);
+            weekday[0]="Sunday";
+            weekday[1]="Monday";
+            weekday[2]="Tuesday";
+            weekday[3]="Wednesday";
+            weekday[4]="Thursday";
+            weekday[5]="Friday";
+            weekday[6]="Saturday";
+
+            let currentTime= new Date();
+            console.log(weekday[currentTime.getDay()])
+       };
+
+       const getcurrentTime= ()=>{
+        var months = [
+            "jan",
+            "feb",
+            "march",
+            "april",
+            "may",
+            "june",
+            "july",
+            "aug",
+            "sep",
+            "oct",
+            "nov",
+            "dec",
+        ];
+      
+        var now = new Date();
+        var month = now.getMonth()+1;
+        var date = now.getDate();
+
+        let hours = now.getHours();
+        let mins = now.getMinutes();
+
+        let periods="AM";
+
+        if(hours>11){
+            periods="PM";
+            if(hours>12)
+            hours -= 12;
+        }
+        if(minus<10){
+            mins="0"+mins;
+        }
+        
+       }
+       getcurrentTime();
+    </script>
 </body>
 </html>

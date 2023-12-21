@@ -3,23 +3,30 @@ section{
     margin: 0%;
     height: 100%;
     width: 100%;
+    font-family: 'Comfortaa', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'KoHo', sans-serif;
+font-family: 'Mina', sans-serif;
+font-family: 'Quantico', sans-serif;
 }
+
 .homepg{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    height: 80vh;
 }
 .container{
-    background-color: rgba(171, 169, 169, 0.252);
+    background-color: rgba(171, 169, 169, 0.179);
     height: 50vh;
-    width: 50%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 3rem;
+    border-radius: 2rem;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.392);
 }
 .info{
