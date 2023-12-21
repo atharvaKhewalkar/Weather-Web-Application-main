@@ -1,0 +1,22 @@
+{
+  "name": "weather-web-application-main",
+  "version": "1.0.0",
+  "description": "creating a weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atharvaKhewalkar/Weather-Web-Application-main.git"
+  },
+  "author": "atharva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atharvaKhewalkar/Weather-Web-Application-main/issues"
+  },
+  "homepage": "https://github.com/atharvaKhewalkar/Weather-Web-Application-main#readme",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
