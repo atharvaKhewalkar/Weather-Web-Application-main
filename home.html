@@ -20,11 +20,11 @@
                 
                 <div class="info">
                     <h3 class="location">Pune,IN</h3>
-                    <p id="date">WED|OCT23|10:00AM</p>
+                    <p id="date">WED|OC23|10:00AM</p>
                     <h3 class="temp">26.49*C</h3>
                     <p class="tempmin_max">Min 26.49*C| Maz 26.49*C</p>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -45,25 +45,15 @@
             weekday[6]="Saturday";
 
             let currentTime= new Date();
-            console.log(weekday[currentTime.getDay()])
+            let day = weekday[currentTime.getDay()];
+
+
+            return day;
+
+
        };
 
        const getcurrentTime= ()=>{
-        var months = [
-            "jan",
-            "feb",
-            "march",
-            "april",
-            "may",
-            "june",
-            "july",
-            "aug",
-            "sep",
-            "oct",
-            "nov",
-            "dec",
-        ];
-      
         var now = new Date();
         var month = now.getMonth()+1;
         var date = now.getDate();
@@ -78,12 +68,14 @@
             if(hours>12)
             hours -= 12;
         }
-        if(minus<10){
+        if(mins<10){
             mins="0"+mins;
         }
-        
-       }
-       getcurrentTime();
+        return `${month}-${date} | ${hours}:${mins}${periods}`;
+       };
+
+       curDate.innerHTML = getcurrentDay()+" | "+getcurrentTime();
+
     </script>
 </body>
 </html>
